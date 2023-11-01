@@ -1,188 +1,85 @@
 // global color tokens
 $-clr-white: hsl(0 0% 100%);
-$-clr-grey-100: hsl(0 0% 91%);
-$-clr-grey-600: hsl(0 0% 42%);
-$-clr-grey-800: hsl(0 0% 25%);
-$-clr-black: hsl(0 0% 0%);
-$-clr-orange-100: hsl(24 75% 95%);
-$-clr-orange-200: hsl(24 75% 82.5%);
-$-clr-orange-300: hsl(24 75% 70%);
-$-clr-orange-400: hsl(24 75% 60%);
-$-clr-orange-500: hsl(24 75% 50%);
-$-clr-orange-600: hsl(24 75% 40%);
-$-clr-orange-700: hsl(24 75% 30%);
-$-clr-orange-800: hsl(24 75% 17.5%);
-$-clr-orange-900: hsl(24 75% 7.5%);
-$-clr-yellow-200: hsl(48 75% 86%);
-$-clr-yellow-400: hsl(48 75% 65%);
-$-clr-yellow-700: hsl(48 75% 30%);
-$-clr-yellowgreen-100: hsl(72 75% 95%);
-$-clr-yellowgreen-200: hsl(72 75% 82.5%);
-$-clr-yellowgreen-300: hsl(72 75% 70%);
-$-clr-yellowgreen-400: hsl(72 75% 60%);
-$-clr-yellowgreen-500: hsl(72 75% 50%);
-$-clr-yellowgreen-600: hsl(72 75% 40%);
-$-clr-yellowgreen-700: hsl(72 75% 30%);
-$-clr-yellowgreen-800: hsl(72 75% 17.5%);
-$-clr-yellowgreen-900: hsl(72 75% 7.5%);
-$-clr-green-200: hsl(96 75% 81%);
-$-clr-green-500: hsl(96 75% 51%);
-$-clr-green-600: hsl(96 75% 41%);
-$-clr-green-800: hsl(96 75% 19%);
-$-clr-lime-100: hsl(144 75% 95%);
-$-clr-lime-200: hsl(144 75% 82.5%);
-$-clr-lime-300: hsl(144 75% 70%);
-$-clr-lime-400: hsl(144 75% 60%);
-$-clr-lime-500: hsl(144 75% 50%);
-$-clr-lime-600: hsl(144 75% 40%);
-$-clr-lime-700: hsl(144 75% 30%);
-$-clr-lime-800: hsl(144 75% 17.5%);
-$-clr-lime-900: hsl(144 75% 7.5%);
-$-clr-turquoise-100: hsl(168 75% 95%);
-$-clr-turquoise-200: hsl(168 75% 82.5%);
-$-clr-turquoise-300: hsl(168 75% 70%);
-$-clr-turquoise-400: hsl(168 75% 60%);
-$-clr-turquoise-500: hsl(168 75% 50%);
-$-clr-turquoise-600: hsl(168 75% 40%);
-$-clr-turquoise-700: hsl(168 75% 30%);
-$-clr-turquoise-800: hsl(168 75% 17.5%);
-$-clr-turquoise-900: hsl(168 75% 7.5%);
-$-clr-cyan-200: hsl(192 75% 81%);
-$-clr-cyan-500: hsl(192 75% 53%);
-$-clr-cyan-700: hsl(192 75% 27%);
-$-clr-skyblue-100: hsl(216 75% 95%);
-$-clr-skyblue-200: hsl(216 75% 82.5%);
-$-clr-skyblue-300: hsl(216 75% 70%);
-$-clr-skyblue-400: hsl(216 75% 60%);
-$-clr-skyblue-500: hsl(216 75% 50%);
-$-clr-skyblue-600: hsl(216 75% 40%);
-$-clr-skyblue-700: hsl(216 75% 30%);
-$-clr-skyblue-800: hsl(216 75% 17.5%);
-$-clr-skyblue-900: hsl(216 75% 7.5%);
-$-clr-blue-100: hsl(240 75% 96%);
-$-clr-blue-200: hsl(240 75% 86%);
-$-clr-blue-600: hsl(240 75% 39%);
-$-clr-blue-800: hsl(240 75% 23%);
-$-clr-purple-100: hsl(264 75% 95%);
-$-clr-purple-200: hsl(264 75% 82.5%);
-$-clr-purple-300: hsl(264 75% 70%);
-$-clr-purple-400: hsl(264 75% 60%);
-$-clr-purple-500: hsl(264 75% 50%);
-$-clr-purple-600: hsl(264 75% 40%);
-$-clr-purple-700: hsl(264 75% 30%);
-$-clr-purple-800: hsl(264 75% 17.5%);
-$-clr-purple-900: hsl(264 75% 7.5%);
-$-clr-magenta-100: hsl(288 75% 95%);
-$-clr-magenta-200: hsl(288 75% 82.5%);
-$-clr-magenta-300: hsl(288 75% 70%);
-$-clr-magenta-400: hsl(288 75% 60%);
-$-clr-magenta-500: hsl(288 75% 50%);
-$-clr-magenta-600: hsl(288 75% 40%);
-$-clr-magenta-700: hsl(288 75% 30%);
-$-clr-magenta-800: hsl(288 75% 17.5%);
-$-clr-magenta-900: hsl(288 75% 7.5%);
-$-clr-pink-200: hsl(312 75% 84%);
-$-clr-pink-400: hsl(312 75% 63%);
-$-clr-pink-800: hsl(312 75% 27%);
-$-clr-deeppink-100: hsl(336 75% 95%);
-$-clr-deeppink-200: hsl(336 75% 82.5%);
-$-clr-deeppink-300: hsl(336 75% 70%);
-$-clr-deeppink-400: hsl(336 75% 60%);
-$-clr-deeppink-500: hsl(336 75% 50%);
-$-clr-deeppink-600: hsl(336 75% 40%);
-$-clr-deeppink-700: hsl(336 75% 30%);
-$-clr-deeppink-800: hsl(336 75% 17.5%);
-$-clr-deeppink-900: hsl(336 75% 7.5%);
-$-clr-red-100: hsl(0 75% 95%);
-$-clr-red-200: hsl(0 75% 82.5%);
-$-clr-red-300: hsl(0 75% 70%);
-$-clr-red-400: hsl(0 75% 60%);
-$-clr-red-500: hsl(0 75% 50%);
-$-clr-red-600: hsl(0 75% 40%);
-$-clr-red-700: hsl(0 75% 30%);
-$-clr-red-800: hsl(0 75% 17.5%);
-$-clr-red-900: hsl(0 75% 7.5%);
+$-clr-grey-light: hsl(0 0% 91%);
+$-clr-grey-mid: hsl(0 0% 42%);
+$-clr-grey-dark: hsl(0 0% 25%);
 
-$-clr-grey-light: $-clr-grey-100;
-$-clr-grey-mid: $-clr-grey-600;
-$-clr-grey-dark: $-clr-grey-800;
+$-clr-blue-very-light: hsl(213 47% 96%);
+$-clr-blue-light: hsl(218 39% 86%);
+$-clr-blue-mid: hsl(218 48% 39%);
+$-clr-blue-dark: hsl(218 36% 23%);
 
-$-clr-blue-very-light: $-clr-blue-100;
-$-clr-blue-light: $-clr-blue-200;
-$-clr-blue-mid: $-clr-blue-600;
-$-clr-blue-dark: $-clr-blue-800;
+$-clr-green-very-light: hsl(168 98% 81%);
+$-clr-green-light: hsl(168 96% 51%);
+$-clr-green-mid: hsl(169 100% 41%);
+$-clr-green-dark: hsl(168 80% 19%);
 
-$-clr-green-very-light: $-clr-green-200;
-$-clr-green-light: $-clr-green-500;
-$-clr-green-mid: $-clr-green-600;
-$-clr-green-dark: $-clr-green-800;
+$-clr-yellow-light: hsl(36 100% 86%);
+$-clr-yellow-mid: hsl(36 80% 65%);
+$-clr-yellow-dark: hsl(36 77% 30%);
 
-$-clr-yellow-light: $-clr-yellow-200;
-$-clr-yellow-mid: $-clr-yellow-400;
-$-clr-yellow-dark: $-clr-yellow-700;
+$-clr-pink-light: hsl(340 81% 84%);
+$-clr-pink-mid: hsl(340 68% 63%);
+$-clr-pink-dark: hsl(340 76% 27%);
 
-$-clr-pink-light: $-clr-pink-200;
-$-clr-pink-mid: $-clr-pink-400;
-$-clr-pink-dark: $-clr-pink-800;
-
-$-clr-cyan-light: $-clr-cyan-200;
-$-clr-cyan-mid: $-clr-cyan-500;
-$-clr-cyan-dark: $-clr-cyan-700;
+$-clr-cyan-light: hsl(194 98% 81%);
+$-clr-cyan-mid: hsl(197 64% 53%);
+$-clr-cyan-dark: hsl(195 69% 27%);
 
 $default: (
     "neutral": ("000": $-clr-white,
         "100": $-clr-grey-light,
-        "600": $-clr-grey-mid,
-        "800": $-clr-grey-dark,
-        "1000": $-clr-black ),
-    "brand-accent": ("200": $-clr-green-very-light,
-        "500": $-clr-green-light,
-        "600": $-clr-green-mid,
-        "800": $-clr-green-dark,
+        "400": $-clr-grey-mid,
+        "700": $-clr-grey-dark,
     ),
     "brand-primary": ("100": $-clr-blue-very-light,
         "200": $-clr-blue-light,
-        "600": $-clr-blue-mid,
-        "800": $-clr-blue-dark,
+        "400": $-clr-blue-mid,
+        "700": $-clr-blue-dark,
     ),
-    "yellow": ("200": $-clr-yellow-light,
+    "brand-accent": ("100": $-clr-green-very-light,
+        "200": $-clr-green-light,
+        "400": $-clr-green-mid,
+        "700": $-clr-green-dark,
+    ),
+    "yellow": ("300": $-clr-yellow-light,
         "400": $-clr-yellow-mid,
-        "700": $-clr-yellow-dark,
+        "500": $-clr-yellow-dark,
     ),
-    "pink": ("200": $-clr-pink-light,
+    "pink": ("300": $-clr-pink-light,
         "400": $-clr-pink-mid,
-        "800": $-clr-pink-dark,
+        "500": $-clr-pink-dark,
     ),
-    "cyan": ("200": $-clr-cyan-200,
-        "500": $-clr-cyan-500,
-        "700": $-clr-cyan-700,
-    )
+    "cyan": ("300": $-clr-cyan-light,
+        "400": $-clr-cyan-mid,
+        "500": $-clr-cyan-dark,
+    ),
 );
 
 // contextual color tokens
 $color-neutral-000: var(--neutral-000);
 $color-neutral-100: var(--neutral-100);
-$color-neutral-600: var(--neutral-600);
-$color-neutral-800: var(--neutral-800);
+$color-neutral-400: var(--neutral-400);
+$color-neutral-700: var(--neutral-700);
 
 $color-brand-primary-100: var(--brand-primary-100);
 $color-brand-primary-200: var(--brand-primary-200);
-$color-brand-primary-600: var(--brand-primary-600);
-$color-brand-primary-800: var(--brand-primary-800);
+$color-brand-primary-400: var(--brand-primary-400);
+$color-brand-primary-700: var(--brand-primary-700);
 
+$color-brand-accent-100: var(--brand-accent-100);
 $color-brand-accent-200: var(--brand-accent-200);
-$color-brand-accent-500: var(--brand-accent-500);
-$color-brand-accent-600: var(--brand-accent-600);
-$color-brand-accent-800: var(--brand-accent-800);
+$color-brand-accent-400: var(--brand-accent-400);
+$color-brand-accent-700: var(--brand-accent-700);
 
-$color-yellow-200: var(--yellow-200);
+$color-yellow-300: var(--yellow-300);
 $color-yellow-400: var(--yellow-400);
-$color-yellow-700: var(--yellow-700);
+$color-yellow-500: var(--yellow-500);
 
-$color-pink-200: var(--pink-200);
+$color-pink-300: var(--pink-300);
 $color-pink-400: var(--pink-400);
-$color-pink-800: var(--pink-800);
+$color-pink-500: var(--pink-500);
 
-$color-cyan-200: var(--cyan-200);
+$color-cyan-300: var(--cyan-300);
+$color-cyan-400: var(--cyan-400);
 $color-cyan-500: var(--cyan-500);
-$color-cyan-700: var(--cyan-700);
