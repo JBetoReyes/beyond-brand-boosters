@@ -2,3 +2,8 @@
   border-radius: 50%;
   aspect-ratio: 1 / 1;
 }
+
+.round-top {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
