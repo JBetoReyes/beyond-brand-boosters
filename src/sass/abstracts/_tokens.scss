@@ -105,6 +105,9 @@ $button-border: 0;
 $button-border-radius: $border-radius-1;
 $button-line-height: $body-line-height;
 
+$button-default-background: transparent;
+$button-default-hover-background: $color-neutral-100;
+
 $button-accent-color: $color-brand-primary-700;
 $button-accent-background: $color-brand-accent-400;
 $button-accent-color-hover: $color-brand-primary-700;
