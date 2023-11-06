@@ -14,4 +14,9 @@
             color: $navigation-color-hover;
         }
     }
+
+    .site-footer & {
+        margin-inline: auto;
+        justify-content: center;
+    }
 }
