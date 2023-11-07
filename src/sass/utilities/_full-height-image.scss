@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.full-height-image {
+
+    &:where([data-position="right"]) {
+        margin-block-end: calc($section-padding-block * -1);
+    }
+
+    &:where([data-position="left"]) {
+        margin-block-start: calc($section-padding-block * -1);
+    }
+
+    @include mq(medium) {
+        margin-block-start: calc(calc($section-padding-block * -1) + var(--space-top, 0px));
+        margin-block-end: calc(calc($section-padding-block * -1) + var(--space-bottom, 0px));
+    }
+
+    img {
+        object-fit: cover;
+        height: 100%;
+    }
+}

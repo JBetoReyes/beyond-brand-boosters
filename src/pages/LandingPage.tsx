@@ -55,14 +55,14 @@ const LandingPage = () => {
                 <section className="section about-us | bg-brand-primary-700 clr-neutral-000">
                     <div className="container">
                         <div className="switcher">
-                            <div className="about-us__content | flow">
+                            <div className="about-us__content | flow vertical-centered">
                                 <h2 className="heading-2 | clr-neutral-000">About Us</h2>
                                 <p>BrandBoosters was founded with the mission of <span className="fw-bold">helping businesses of all sizes</span> achieve their marketing goals by working closely with each client to <span className="fw-bold">develop a customized strategy that delivers result</span> </p>
                                 <div className="about-us__ctas">
                                     <a href="" className="button" data-type="accent">Learn more about us</a>
                                 </div>
                             </div>
-                            <div className="about-us__image">
+                            <div className="about-us__image | full-height-image" data-position="right" style={{ "--space-top": "1.25rem" } as React.CSSProperties}>
                                 <img className="round-top | bg-brand-primary-200" src="/images/girl-on-phone.webp" alt="girl on phone" />
                             </div>
                         </div>
