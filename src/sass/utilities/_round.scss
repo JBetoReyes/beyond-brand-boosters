@@ -4,6 +4,9 @@
 }
 
 .round-top {
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
+  border-radius: 100vw 100vw 0 0;
+}
+
+.round-bottom {
+  border-radius: 0 0 100vw 100vw;
 }
