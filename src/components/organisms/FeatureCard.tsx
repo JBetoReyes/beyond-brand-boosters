@@ -2,13 +2,13 @@ export type FeatureCardProps = {
     title: string;
     content: string;
     url: string;
-    backgroundImageUrl: string;
+    backgroundImage: "book" | "advertising-icon" | "social-media-icon" | "analytics-icon";
     backgroundImagePosition: "left" | "bottom-right";
     backgroundColor: "accent" | "yellow" | "pink" | "cyan";
 }
 
 const FeatureCard = (props: FeatureCardProps) => {
-    const { title, content, url, backgroundImageUrl, backgroundImagePosition, backgroundColor } = props;
+    const { title, content, url, backgroundImage, backgroundImagePosition, backgroundColor } = props;
     const colors = {
         accent: {
             backgroundColor: "bg-brand-accent-100",
@@ -29,9 +29,9 @@ const FeatureCard = (props: FeatureCardProps) => {
     }
     const color = colors[backgroundColor];
     return (
-        <div className={`card feature-card ${color.backgroundColor}`}>
+        <div className={`card feature-card ${color.backgroundColor} ${backgroundImage}`} data-position={backgroundImagePosition}>
             <h3 className="feature-card__heading card__heading | heading-3">{title}</h3>
-            <div className="feature-card__content">{content}</div>
+            <p className="feature-card__content">{content}</p>
             <div className="feature-card__footer">
                 <a className={`${color.linkTextColor}`} href={url}>Try now</a>
             </div>

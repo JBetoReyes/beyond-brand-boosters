@@ -6,30 +6,30 @@ const LandingPage = () => {
         title: "Content Creation",
         content: "High-quality content that resonates with your audience and drives engagement.",
         url: "/",
-        backgroundImageUrl: "/images/book.svg",
+        backgroundImage: "book",
         backgroundColor: "accent",
-        backgroundImagePosition: "left"
+        backgroundImagePosition: "bottom-right"
     }, {
         title: "Targeted Advertising",
         content: "Reach your ideal customers with precision through our targeted advertising campaigns.",
         url: "/images/advertising-icon.svg",
-        backgroundImageUrl: "/images/advertising-icon.svg",
+        backgroundImage: "advertising-icon",
         backgroundColor: "yellow",
-        backgroundImagePosition: "bottom-right"
+        backgroundImagePosition: "left"
     }, {
         title: "Social Media Management",
         content: "Let us handle your social media presence and engage with your audience on a personal level.",
         url: "/",
-        backgroundImageUrl: "/images/social-media-icon.svg",
+        backgroundImage: "social-media-icon",
         backgroundColor: "pink",
-        backgroundImagePosition: "left"
+        backgroundImagePosition: "bottom-right"
     }, {
         title: "Analytics",
         content: "Stay on top of your campaign's performance with our detailed analytics and reporting.",
         url: "/",
-        backgroundImageUrl: "/images/analytics-icon.svg",
+        backgroundImage: "analytics-icon",
         backgroundColor: "cyan",
-        backgroundImagePosition: "bottom-right"
+        backgroundImagePosition: "left"
     }];
     return (
         <DefaultLayout>
