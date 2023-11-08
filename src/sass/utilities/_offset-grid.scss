@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+.offset-grid {
+    display: grid;
+    grid-gap: $grid-gap;
+    grid-template-columns: 1fr;
+
+    p {
+        max-width: 32ch;
+    }
+
+    @include mq(medium) {
+        grid-template-columns: repeat(3, 1fr);
+
+        &>*:nth-child(2),
+        &>*:nth-child(3) {
+            grid-column: span 2;
+        }
+    }
+}

@@ -71,7 +71,7 @@ const LandingPage = () => {
                 <section className="section features">
                     <div className="container | flow">
                         <h2 className="heading-2 | text-center">Features</h2>
-                        <div className="features__content">
+                        <div className="features__content | offset-grid">
                             {featureCards.map((featureCard, index) => {
                                 return (
                                     <FeatureCard key={index} {...featureCard} />
