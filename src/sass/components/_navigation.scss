@@ -6,6 +6,31 @@
     font-family: $navigation-font-family;
     font-weight: $navigation-font-weight;
 
+    .site-header & {
+        position: absolute;
+        flex-direction: column;
+        left: calc(-100% - calc($navigation-mobile-padding * 2));
+        top: calc(3.875rem + calc($site-header-padding-block * 2));
+        background-color: $site-header-background-color;
+        width: 100%;
+        padding: $navigation-mobile-padding;
+        align-items: center;
+        row-gap: $navigation-row-gap;
+        transition: all .3s ease-in-out;
+
+        @include mq(medium) {
+            position: unset;
+            flex-direction: row;
+            padding: unset;
+            width: fit-content;
+
+        }
+    }
+
+    &.active {
+        left: 0;
+    }
+
     a {
         color: $navigation-color;
         text-decoration: $navigation-link-text-decoration;

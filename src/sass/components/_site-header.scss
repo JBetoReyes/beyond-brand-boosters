@@ -3,7 +3,7 @@
 .site-header {
     color: $site-header-color;
     background-color: $site-header-background-color;
-    padding: $site-header-padding;
+    padding: $site-header-padding-block $site-header-padding-inline;
 
     &__inner {
         display: flex;

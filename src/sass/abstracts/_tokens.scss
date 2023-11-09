@@ -72,7 +72,8 @@ $container-max-width-wide: 68.875rem;
 // site header
 $site-header-background-color: $color-brand-primary-100;
 $site-header-color: $color-neutral-700;
-$site-header-padding: $size-8 0;
+$site-header-padding-block: $size-8;
+$site-header-padding-inline: 0;
 $site-header-margin: 0;
 $site-header-justification-small-screens: space-between;
 $site-header-justification-large-screens: space-between;
@@ -86,6 +87,11 @@ $navigation-gap: $size-11;
 $navigation-link-text-decoration: none;
 $navigation-font-family: $body-font-family;
 $navigation-font-weight: $body-font-weight;
+$navigation-mobile-padding: $size-8;
+$navigation-row-gap: $size-8;
+
+// hamburger
+$hamburger-bar-background-color: $color-brand-primary-400;
 
 // site footer
 $footer-background-color: $color-neutral-000;

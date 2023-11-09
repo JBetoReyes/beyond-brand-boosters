@@ -1,6 +1,5 @@
 import SiteNav from "./SiteNav";
 
-
 const SiteHeader = () => {
     return (
         <header className="site-header">

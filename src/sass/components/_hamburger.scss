@@ -1,0 +1,24 @@
+@use "../abstracts/" as *;
+
+.hamburger {
+    display: block;
+
+    .site-footer & {
+        display: none;
+    }
+
+    @include mq(medium) {
+        display: none;
+    }
+}
+
+.bar {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin: 5px auto;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: $hamburger-bar-background-color;
+    cursor: pointer;
+}
