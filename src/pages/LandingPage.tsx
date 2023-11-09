@@ -17,7 +17,7 @@ const LandingPage = () => {
         backgroundColor: "yellow",
         backgroundImagePosition: "left"
     }, {
-        title: "Social Media Management",
+        title: "Social Media",
         content: "Let us handle your social media presence and engage with your audience on a personal level.",
         url: "/",
         backgroundImage: "social-media-icon",
