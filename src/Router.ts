@@ -1,12 +1,15 @@
 import { Router, Route, RootRoute } from '@tanstack/react-router';
-import LandingPage from './pages/LandingPage';
 import DefaultLayout from './components/templates/DefaultLayout';
+import LandingPage from './pages/LandingPage';
+import AboutUsPage from './pages/AboutUsPage';
 
 const rootRoute = new RootRoute({ component: DefaultLayout });
 
-const indexRoute = new Route({ getParentRoute: () => rootRoute, path: '/beyond-brand-boosters', component: LandingPage });
+export const indexRoute = new Route({ getParentRoute: () => rootRoute, path: '/beyond-brand-boosters' });
+export const landingRoute = new Route({ getParentRoute: () => indexRoute, path: '/', component: LandingPage });
+export const aboutUsRoute = new Route({ getParentRoute: () => indexRoute, path: '/about-us', component: AboutUsPage });
 
-const routeTree = rootRoute.addChildren([indexRoute]);
+const routeTree = rootRoute.addChildren([indexRoute.addChildren([landingRoute, aboutUsRoute])]);
 
 export const router = new Router({ routeTree })
 

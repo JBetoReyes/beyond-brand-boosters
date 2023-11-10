@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import SiteNav from "./SiteNav";
 
 const SiteHeader = () => {
@@ -5,7 +6,9 @@ const SiteHeader = () => {
         <header className="site-header">
             <div className="container" data-type="wide">
                 <div className="site-header__inner">
-                    <img src="./images/logo.svg" alt="" className="logo" />
+                    <Link to="/beyond-brand-boosters">
+                        <img src="./images/logo.svg" alt="" className="logo" />
+                    </Link>
                     <SiteNav />
                 </div>
             </div>
