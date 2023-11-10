@@ -1,9 +1,10 @@
-import LandingPage from "./pages/LandingPage";
+import { RouterProvider } from '@tanstack/react-router'
+import { router } from "./Router";
 import "./sass/main.scss";
 
 function App() {
-
-  return <LandingPage />;
+  return <RouterProvider router={router} />
+    ;
 }
 
 export default App
