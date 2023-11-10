@@ -24,7 +24,7 @@ const AboutUsPage = () => {
                             <p>BrandBoosters offers a range of features to help you achieve your marketing goals. Our targeted advertising, social media management, content creation, and advanced analytics and reporting services ensure that your marketing efforts are effective and efficient. With BrandBoosters, you can trust that your brand is in good hands.</p>
                         </div>
                         <div className="section-benefits__image-container">
-                            <img className="section-benefits__image | round" src="/beyond-brand-boosters/images/phone-in-hand.webp" alt="A group of people working together" />
+                            <img className="section-benefits__image | round bg-brand-primary-200" src="/beyond-brand-boosters/images/phone-in-hand.webp" alt="A group of people working together" />
                         </div>
                     </div>
                 </div>
