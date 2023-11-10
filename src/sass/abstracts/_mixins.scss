@@ -40,3 +40,14 @@
     font-weight: $heading-font-weight;
     line-height: $heading-line-height;
 }
+
+@mixin pseudo-underline($width, $height, $background-color, $margin) {
+    &:after {
+        content: '';
+        display: block;
+        width: $width;
+        height: $height;
+        background-color: $background-color;
+        margin: $margin auto;
+    }
+}
