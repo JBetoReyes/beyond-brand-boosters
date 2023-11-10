@@ -1,7 +1,33 @@
+@use "../../abstracts" as *;
+
 .about-us-page .section-hero {
+    padding-block-end: $size-6;
+
+    &__image-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     &__image {
+        grid-row: 1;
+        grid-column: 1;
         max-height: 32.125rem;
         width: 100%;
         object-fit: cover;
+    }
+
+    &__image-button {
+        grid-row: 1;
+        grid-column: 1;
+        margin: auto;
+        padding-inline: $size-11;
+
+        @include mq(medium) {
+            padding-inline: $size-4;
+        }
+    }
+
+    @include mq(medium) {
+        padding-block-end: $section-padding-block
     }
 }
