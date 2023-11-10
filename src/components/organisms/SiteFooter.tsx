@@ -3,7 +3,7 @@ import SiteNav from "./SiteNav";
 const SiteFooter = () => {
     return (
         <footer className="site-footer">
-            <div className="container" data-type="wide">
+            <div className="container | underline" data-type="wide">
                 <SiteNav />
             </div>
             <div className="fine-print | fs-200 text-center">
