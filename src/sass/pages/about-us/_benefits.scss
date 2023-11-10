@@ -1,0 +1,41 @@
+@use "../../abstracts/" as *;
+
+.about-us-page .section-benefits {
+    padding-block-start: $size-6;
+
+    &__image-container {
+        position: relative;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            background-color: $color-brand-primary-200;
+            border-radius: 50%;
+            width: 100%;
+            max-width: 25rem;
+            max-height: 25rem;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__image {
+        position: relative;
+        width: 100%;
+        max-width: 25rem;
+        max-height: 25rem;
+        object-fit: cover;
+
+    }
+
+    @include mq(medium) {
+        padding-block-start: $section-padding-block;
+    }
+}
