@@ -3,6 +3,7 @@
 .site-footer {
     background-color: $footer-background-color;
     color: $footer-text-color;
+    padding-block-end: $footer-padding-block-end;
 
     a {
         color: $footer-link-color;

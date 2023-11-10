@@ -67,7 +67,7 @@ const LandingPage = () => {
                 </div>
             </section>
             <section className="section features">
-                <div className="container | flow">
+                <div className="container | flow" style={{ "--flow-spacer": "1.375rem" } as React.CSSProperties}>
                     <h2 className="heading-2 | text-center">Features</h2>
                     <div className="features__content | offset-grid">
                         {featureCards.map((featureCard, index) => {
