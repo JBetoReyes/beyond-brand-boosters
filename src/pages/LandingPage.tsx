@@ -1,4 +1,5 @@
 import FeatureCard, { FeatureCardProps } from "../components/organisms/FeatureCard";
+import "../sass/pages/landing/index.scss";
 
 const LandingPage = () => {
     const featureCards: FeatureCardProps[] = [{
@@ -31,7 +32,7 @@ const LandingPage = () => {
         backgroundImagePosition: "left"
     }];
     return (
-        <main>
+        <main className="landing-page">
             <section className="section section-hero">
                 <div className="container" data-type="wide">
                     <div className="switcher">

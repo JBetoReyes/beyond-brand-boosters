@@ -1,6 +1,6 @@
-@use "../abstracts/" as *;
+@use "../../abstracts/" as *;
 
-.section-hero {
+.landing-page .section-hero {
     --switcher-basis: 43.75rem;
 
     &__image {
