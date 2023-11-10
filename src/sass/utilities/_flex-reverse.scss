@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-md-row-reverse {
+    @include mq(medium) {
+        flex-direction: row-reverse;
+    }
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-md-column-reverse {
+    @include mq(medium) {
+        flex-direction: column-reverse;
+    }
+}
