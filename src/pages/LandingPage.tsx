@@ -45,7 +45,7 @@ const LandingPage = () => {
                             </div>
                         </div>
                         <div className="section-hero__image-container">
-                            <img className="section-hero__image | border-radius-2" src="/images/group-on-computer.webp" alt="A group three people seeing a computer" />
+                            <img className="section-hero__image | border-radius-2" src="./images/group-on-computer.webp" alt="A group three people seeing a computer" />
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ const LandingPage = () => {
                             </div>
                         </div>
                         <div className="about-us__image | full-height-image" data-position="right" style={{ "--space-top": "1.25rem" } as React.CSSProperties}>
-                            <img className="round-top | bg-brand-primary-200" src="/images/girl-on-phone.webp" alt="girl on phone" />
+                            <img className="round-top | bg-brand-primary-200" src="./images/girl-on-phone.webp" alt="girl on phone" />
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ const SiteHeader = () => {
         <header className="site-header">
             <div className="container" data-type="wide">
                 <div className="site-header__inner">
-                    <img src="/images/logo.svg" alt="" className="logo" />
+                    <img src="./images/logo.svg" alt="" className="logo" />
                     <SiteNav />
                 </div>
             </div>
