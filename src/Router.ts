@@ -1,7 +1,8 @@
 import { Router, Route, RootRoute } from '@tanstack/react-router';
 import LandingPage from './pages/LandingPage';
+import DefaultLayout from './components/templates/DefaultLayout';
 
-const rootRoute = new RootRoute();
+const rootRoute = new RootRoute({ component: DefaultLayout });
 
 const indexRoute = new Route({ getParentRoute: () => rootRoute, path: '/beyond-brand-boosters', component: LandingPage });
 

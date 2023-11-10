@@ -1,15 +1,11 @@
-import { ReactNode } from "react";
+import { Outlet } from "@tanstack/react-router";
 import SiteHeader from "../organisms/SiteHeader";
 import SiteFooter from "../organisms/SiteFooter";
 
-type DefaultLayoutProps = {
-    children: ReactNode;
-};
-
-const DefaultLayout = ({ children }: DefaultLayoutProps) => {
+const DefaultLayout = () => {
     return (<>
         <SiteHeader />
-        {children}
+        <Outlet />
         <SiteFooter />
     </>);
 };
