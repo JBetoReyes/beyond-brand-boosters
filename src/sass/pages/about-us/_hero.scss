@@ -21,6 +21,7 @@
         grid-column: 1;
         margin: auto;
         padding-inline: $size-11;
+        font-family: $font-family-accent;
 
         @include mq(medium) {
             padding-inline: $size-4;
