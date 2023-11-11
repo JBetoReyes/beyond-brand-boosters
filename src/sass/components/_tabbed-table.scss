@@ -1,0 +1,46 @@
+@use "../abstracts" as *;
+
+.tabbed-table {
+    li:not(:last-child) {
+        @include pseudo-underline(100%, 1px, $color-neutral-000, $size-7);
+    }
+}
+
+.tab {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: $font-size-550;
+
+    &__button {
+        background-color: transparent;
+        width: calc(2.625rem - (2px * 2));
+        height: calc(2.625rem - (2px * 2));
+        border: 2px solid currentColor;
+        margin-block: auto;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        .active & {
+            background-color: $color-brand-accent-400;
+            color: $color-brand-primary-700;
+            border: 2px solid $color-brand-accent-400;
+        }
+
+        &:before {
+            content: "";
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-right: solid 2px currentColor;
+            border-bottom: solid 2px currentColor;
+            transform: rotate(-45deg) translate(45%, 45%);
+        }
+    }
+
+    &__label {
+        .active & {
+            font-weight: 700;
+        }
+    }
+}
