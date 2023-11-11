@@ -12,9 +12,12 @@ export type TabbedTableProps = {
 
 const TabbedTable = ({ tabs = [] }: TabbedTableProps) => {
     const [activeTab, setActiveTab] = useState(0);
+    const switcherCssProperties = {
+        "--switcher-column-gap": "5.5625rem", "--switcher-row-gap": "3.5rem", "--switcher-basis": "52.5rem"
+    } as React.CSSProperties
     return (
-        <div className="switcher">
-            <div className="tabbed-table | flow">
+        <div className="switcher" style={switcherCssProperties as React.CSSProperties}>
+            <div className="tabbed-table | flow" style={{ "--flow-spacer": "3.75rem" } as React.CSSProperties}>
                 <h2 className="heading-2 clr-neutral-000">Feature benefits</h2>
                 <ul className="tabbed-table__tabs">
                     {tabs.map(({ label }, index) => (

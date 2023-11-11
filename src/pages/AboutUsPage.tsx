@@ -47,9 +47,7 @@ const AboutUsPage = () => {
             </section>
             <section className="section | section-benefits-features bg-brand-primary-700 clr-neutral-000">
                 <div className="container">
-                    <div className="switcher">
-                        <TabbedTable tabs={tabs} />
-                    </div>
+                    <TabbedTable tabs={tabs} />
                 </div>
             </section>
         </main>
