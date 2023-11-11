@@ -1,6 +1,22 @@
+import TabbedTable, { TabbedTableTab } from "../components/organisms/TabbedTable";
 import "../sass/pages/about-us/index.scss";
 
 const AboutUsPage = () => {
+    const tabs: TabbedTableTab[] = [
+        {
+            label: "Content Creation",
+            content: "BrandBoosters content creation service is designed to help you engage with your audience and drive engagement. Our team of creatives produces high-quality content that resonates with your target audience and helps you stand out from the competition. By leveraging our content creation services, you can ensure that your brands message is communicated effectively and consistently across all channels."
+        }, {
+            label: "Targeted Advertising",
+            content: "BrandBoosters targeted advertising service is designed to help you reach your target audience and drive engagement. Our team of experts will work with you to create a custom campaign that will reach your target audience and drive engagement. We will help you create a campaign that is tailored to your needs and budget."
+        }, {
+            label: "Social Media",
+            content: "BrandBoosters social media management service is designed to help you manage your social media presence and drive engagement. Our team of experts will work with you to create a custom campaign that will reach your target audience and drive engagement. We will help you create a campaign that is tailored to your needs and budget."
+        }, {
+            label: "Analytics",
+            content: "BrandBoosters analytics service is designed to help you measure the effectiveness of your marketing efforts. Our team of experts will work with you to create a custom campaign that will reach your target audience and drive engagement. We will help you create a campaign that is tailored to your needs and budget."
+        }
+    ]
     return (
         <main className="about-us-page">
             <section className="section section-hero">
@@ -26,6 +42,13 @@ const AboutUsPage = () => {
                         <div className="section-benefits__image-container">
                             <img className="section-benefits__image | round bg-brand-primary-200" src="/beyond-brand-boosters/images/phone-in-hand.webp" alt="A group of people working together" />
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section className="section | section-benefits-features bg-brand-primary-700 clr-neutral-000">
+                <div className="container">
+                    <div className="switcher">
+                        <TabbedTable tabs={tabs} />
                     </div>
                 </div>
             </section>
