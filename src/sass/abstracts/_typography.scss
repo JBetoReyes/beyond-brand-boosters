@@ -7,6 +7,7 @@ $font-family-accent: $-ff-montserrat;
 $font-sizes: (
     "small": ("700": 2.625rem,
         "600": 2.25rem,
+        "550": 2rem,
         "500": 1.5rem,
         "400": 1.125rem,
         "300": 1rem,
@@ -20,6 +21,7 @@ $font-size-200: var(--fs-200);
 $font-size-300: var(--fs-300);
 $font-size-400: var(--fs-400);
 $font-size-500: var(--fs-500);
+$font-size-550: var(--fs-550);
 $font-size-600: var(--fs-600);
 $font-size-700: var(--fs-700);
 
