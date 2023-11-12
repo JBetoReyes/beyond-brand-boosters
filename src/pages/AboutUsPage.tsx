@@ -1,3 +1,4 @@
+import ServiceCard, { ServiceCardProps } from "../components/organisms/ServiceCard";
 import TabbedTable, { TabbedTableTab } from "../components/organisms/TabbedTable";
 import "../sass/pages/about-us/index.scss";
 
@@ -16,7 +17,24 @@ const AboutUsPage = () => {
             label: "Analytics",
             content: "BrandBoosters analytics service is designed to help you measure the effectiveness of your marketing efforts. Our team of experts will work with you to create a custom campaign that will reach your target audience and drive engagement. We will help you create a campaign that is tailored to your needs and budget."
         }
-    ]
+    ];
+    const serviceCards: ServiceCardProps[] = [{
+        iconClass: "text-icon",
+        title: "Content Creation",
+        content: "High-quality content that resonates with your audience and drives engagement."
+    }, {
+        iconClass: "speech-icon",
+        title: "Social Media",
+        content: "Let us handle your social media presence and engage with your audience on a personal level."
+    }, {
+        iconClass: "arrows-icon",
+        title: "Targeted Advertising",
+        content: "Reach your ideal customers with precision through our targeted advertising campaigns."
+    }, {
+        iconClass: "graph-icon",
+        title: "Analytics",
+        content: "Stay on top of your campaigns performance with our detailed analytics and reporting."
+    }];
     return (
         <main className="about-us-page">
             <section className="section section-hero">
@@ -46,8 +64,20 @@ const AboutUsPage = () => {
                 </div>
             </section>
             <section className="section | section-benefits-features bg-brand-primary-700 clr-neutral-000">
-                <div className="container">
+                <div className="container" data-type="wide">
                     <TabbedTable tabs={tabs} />
+                </div>
+            </section>
+            <section className="section | section-services">
+                <div className="container | flow" data-type="narrow" style={{ "--flow-spacer": "4.125rem" } as React.CSSProperties}>
+                    <h2 className="heading-2">What we can do for you</h2>
+                    <div className="grid-auto-fit" style={{ "--grid-column-gap": "3.65625rem", "--grid-row-gap": "2.415rem" } as React.CSSProperties}>
+                        {serviceCards.map(({ iconClass, title, content }) => {
+                            return (
+                                <ServiceCard key={iconClass} iconClass={iconClass} title={title} content={content} />
+                            )
+                        })}
+                    </div>
                 </div>
             </section>
         </main>
