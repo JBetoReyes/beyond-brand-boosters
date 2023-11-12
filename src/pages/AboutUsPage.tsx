@@ -1,5 +1,6 @@
 import ServiceCard, { ServiceCardProps } from "../components/organisms/ServiceCard";
 import TabbedTable, { TabbedTableTab } from "../components/organisms/TabbedTable";
+import TestimonialCard from "../components/organisms/TestimonialCard";
 import "../sass/pages/about-us/index.scss";
 
 const AboutUsPage = () => {
@@ -78,6 +79,18 @@ const AboutUsPage = () => {
                             )
                         })}
                     </div>
+                </div>
+            </section>
+            <section className="section | section-testimonial bg-brand-primary-100">
+                <div className="container" data-type="narrow">
+                    <TestimonialCard
+                        rating={5}
+                        testimonial="“BrandBoosters has been a game-changer for our marketing efforts. Their targeted advertising and social media management services have helped us reach our ideal customers and engage with our audience.“"
+                        image="/beyond-brand-boosters/images/girl-smiling.webp"
+                        name="John Smith"
+                        role="CEO"
+                        company="Company Inc."
+                    />
                 </div>
             </section>
         </main>
