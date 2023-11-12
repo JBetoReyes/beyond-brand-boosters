@@ -5,14 +5,19 @@
 
     &__image-container {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
+        flex-grow: 40;
     }
 
     &__image {
         max-width: 25rem;
         max-height: 25rem;
         object-fit: cover;
+    }
+
+    &__layout {
+        flex-grow: 64;
     }
 
     @include mq(medium) {
