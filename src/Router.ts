@@ -1,4 +1,4 @@
-import { Router, Route, RootRoute } from '@tanstack/react-router';
+import { Router, Route, RootRoute, createMemoryHistory } from '@tanstack/react-router';
 import DefaultLayout from './components/templates/DefaultLayout';
 import LandingPage from './pages/LandingPage';
 import AboutUsPage from './pages/AboutUsPage';
@@ -11,7 +11,11 @@ export const aboutUsRoute = new Route({ getParentRoute: () => indexRoute, path: 
 
 const routeTree = rootRoute.addChildren([indexRoute.addChildren([landingRoute, aboutUsRoute])]);
 
-export const router = new Router({ routeTree })
+const memoryHistory = createMemoryHistory({
+    initialEntries: ['/'],
+})
+
+export const router = new Router({ routeTree, history: memoryHistory })
 
 declare module '@tanstack/react-router' {
     interface Register {
