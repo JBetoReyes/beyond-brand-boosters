@@ -1,0 +1,17 @@
+.testimonial-card {
+    &__content {
+        .switcher & {
+            flex-grow: 7;
+        }
+    }
+
+    &__image-container {
+        .switcher & {
+            flex-grow: 3;
+        }
+    }
+
+    &__image {
+        max-width: 15.3125rem;
+    }
+}
