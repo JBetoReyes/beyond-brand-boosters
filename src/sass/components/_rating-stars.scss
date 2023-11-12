@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+.rating-stars {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: $rating-stars-font-size;
+    font-size: $rating-stars-font-size;
+}
+
+.rating-stars::before {
+    --percent: calc(var(--rating-star-value, 5)/5*100%);
+    content: '★★★★★';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, $rating-stars-color var(--percent), $rating-stars-background-color var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
