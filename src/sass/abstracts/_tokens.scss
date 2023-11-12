@@ -137,6 +137,11 @@ $card-line-height: $body-line-height;
 $card-heading-color-default: $body-text-color;
 $card-heading-font-size: $font-size-500;
 
+// rating stars
+$rating-stars-color: $color-yellow-400;
+$rating-stars-background-color: rgba(0, 0, 0, .2);
+$rating-stars-font-size: 1.625rem;
+
 // forms
 // not currently being used
 // if implementing forms, also add _forms.scss
