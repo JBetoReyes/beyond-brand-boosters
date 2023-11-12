@@ -6,7 +6,7 @@ const SiteHeader = () => {
         <header className="site-header">
             <div className="container" data-type="wide">
                 <div className="site-header__inner">
-                    <Link to="/beyond-brand-boosters">
+                    <Link to="/beyond-brand-boosters/">
                         <img src="./images/logo.svg" alt="" className="logo" />
                     </Link>
                     <SiteNav />
