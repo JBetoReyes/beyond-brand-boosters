@@ -12,7 +12,7 @@ export const aboutUsRoute = new Route({ getParentRoute: () => indexRoute, path: 
 const routeTree = rootRoute.addChildren([indexRoute.addChildren([landingRoute, aboutUsRoute])]);
 
 const memoryHistory = createMemoryHistory({
-    initialEntries: ['/'],
+    initialEntries: ['/beyond-brand-boosters/'],
 })
 
 export const router = new Router({ routeTree, history: memoryHistory })
