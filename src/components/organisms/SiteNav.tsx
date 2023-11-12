@@ -10,7 +10,7 @@ const SiteNav = () => {
     return (
         <nav aria-label="primary navigation">
             <ul className={`nav | flex-group ${isOpen ? 'active' : ''}`}>
-                <li><a href="#">Pricing</a></li>
+                <Link to="/beyond-brand-boosters/pricing" onClick={toggleMenu}>Pricing</Link>
                 <Link to="/beyond-brand-boosters/about-us" onClick={toggleMenu}>About Us</Link>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Contact Us</a></li>
