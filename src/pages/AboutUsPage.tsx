@@ -87,9 +87,9 @@ const AboutUsPage = () => {
                         rating={5}
                         testimonial="“BrandBoosters has been a game-changer for our marketing efforts. Their targeted advertising and social media management services have helped us reach our ideal customers and engage with our audience.“"
                         image="/beyond-brand-boosters/images/girl-smiling.webp"
-                        name="John Smith"
-                        role="CEO"
-                        company="Company Inc."
+                        name="Sarah Johnson"
+                        role="Marketing Director"
+                        company="GreenLeaf Publications"
                     />
                 </div>
             </section>

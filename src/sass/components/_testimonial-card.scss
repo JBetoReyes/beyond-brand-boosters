@@ -1,13 +1,33 @@
+@use "../abstracts" as *;
+
 .testimonial-card {
     &__content {
         .switcher & {
             flex-grow: 7;
         }
+
+        @include mq(large) {
+            .switcher & {
+                flex-grow: 5;
+            }
+        }
+    }
+
+    &__quote {
+        .flow & {
+            margin-block-start: $size-4;
+        }
     }
 
     &__image-container {
         .switcher & {
-            flex-grow: 3;
+            flex-grow: 5;
+        }
+
+        @include mq(large) {
+            .switcher & {
+                flex-grow: 3;
+            }
         }
     }
 
