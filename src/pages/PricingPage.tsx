@@ -1,4 +1,7 @@
+import CompareTable, { ComparableTableColumn, CompareTableRow } from "../components/organisms/CompareTable";
 import PricingTable, { PricingTableProps } from "../components/organisms/PricingTable";
+
+type ColumnsNames = "Basic" | "Standard" | "Premium";
 
 const PricingPage = () => {
     const pricingTable: PricingTableProps = {
@@ -36,7 +39,54 @@ const PricingPage = () => {
                 "Influencer marketing"
             ]
         }]
-    }
+    };
+    const compareTableColumns: ComparableTableColumn<ColumnsNames>[] = [{
+        columnTitle: "Basic",
+        price: 199,
+    }, {
+        columnTitle: "Standard",
+        price: 399,
+    }, {
+        columnTitle: "Premium",
+        price: 999,
+    }];
+
+    const compareTableRows: CompareTableRow<ColumnsNames>[] = [{
+        rowTitle: "30-day free trial",
+        rowData: {
+            Basic: true,
+            Standard: true,
+            Premium: true,
+        }
+    }, {
+        rowTitle: "Chat support 24/7",
+        rowData: {
+            Basic: true,
+            Standard: true,
+            Premium: true,
+        }
+    }, {
+        rowTitle: "Multiple team members",
+        rowData: {
+            Basic: false,
+            Standard: true,
+            Premium: true,
+        }
+    }, {
+        rowTitle: "Brand Analysis",
+        rowData: {
+            Basic: false,
+            Standard: true,
+            Premium: true,
+        }
+    }, {
+        rowTitle: "Influencer Marketing",
+        rowData: {
+            Basic: false,
+            Standard: false,
+            Premium: true,
+        }
+    }];
     return (
         <main className="pricing-page">
             <section className="section-pricing | section">
@@ -45,6 +95,16 @@ const PricingPage = () => {
                         <h1 className="heading-1 | text-center">Flexible Plans</h1>
                         <PricingTable cards={pricingTable.cards} />
                     </div>
+                </div>
+            </section>
+            <section className="section-compare-table | section">
+                <div className="container" data-type="wide">
+                    <CompareTable
+                        title="Compare Plans"
+                        columns={compareTableColumns}
+                        dataRows={compareTableRows}
+                        style={{ "--compare-table-columns": compareTableColumns.length + 1 } as React.CSSProperties}
+                    />
                 </div>
             </section>
         </main>
