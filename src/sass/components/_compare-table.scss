@@ -1,0 +1,4 @@
+.compare-table {
+    display: grid;
+    grid-template-columns: repeat(var(--compare-table-columns, 4), 1fr);
+}
