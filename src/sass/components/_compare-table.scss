@@ -1,4 +1,29 @@
 .compare-table {
     display: grid;
     grid-template-columns: repeat(var(--compare-table-columns, 4), 1fr);
+
+    &__column {
+        align-self: flex-end;
+    }
+
+    &__price {
+        line-height: 1;
+    }
+
+    &__cell {
+
+        & .circle-checkmark {
+            margin-inline: auto;
+            height: 2.71875rem;
+        }
+
+        & .empty-cell {
+            height: 2.71875rem;
+            justify-self: stretch;
+        }
+    }
+
+    &__row-title {
+        line-height: 2.41;
+    }
 }

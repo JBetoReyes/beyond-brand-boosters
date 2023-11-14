@@ -1,3 +1,6 @@
+import CompareTableHeader from "./CompareTableHeader";
+import CompareTableRow from "./CompareTableRow";
+
 export type ComparableTableColumn<C extends string> = {
     columnTitle: C;
     price: number;
@@ -18,29 +21,16 @@ export type CompareTableProps<C extends string> = {
 const CompareTable = <C extends string>({ title, columns, dataRows, style }: CompareTableProps<C> & { style: React.CSSProperties }) => {
     return (
         <div className="compare-table" style={style}>
-            <div className="compare-table__title">{title}</div>
+            <h2 className="compare-table__title | heading-2 margin-block-end-11">{title}</h2>
             {columns.map((column) => {
                 return (
-                    <div className="compare-table__column | text-center" key={column.columnTitle}>
-                        <div className="compare-table__column-name">
-                            {column.columnTitle}
-                        </div>
-                        <div className="compare-table__price-container">
-                            <span className="compare-table__price">{column.price}</span>/month
-                        </div>
-                    </div>
+                    <CompareTableHeader column={column} key={column.columnTitle} />
                 )
             })}
-            {dataRows.map((row) => {
+            {dataRows.map((row, index) => {
+                const isLastRow = index === dataRows.length - 1;
                 return (
-                    <>
-                        <div className="compare-table__row-title">{row.rowTitle}</div>
-                        {columns.map((column) => {
-                            return (
-                                <div className="justify-self-center">{row.rowData[column.columnTitle] ? 'CheckMark' : ''}</div>
-                            );
-                        })}
-                    </>
+                    <CompareTableRow row={row} columns={columns} isLastRow={isLastRow} key={row.rowTitle} />
                 );
             })}
         </div>
