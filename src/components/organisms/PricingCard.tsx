@@ -13,7 +13,7 @@ const PricingCard = ({ type, price, description, features }: PricingCardProps) =
                 <span className="pricing-card__price | fs-600 fw-bold ff-accent">${price}</span>/month
             </div>
             <div className="pricing-card__description | fs-300">{description}</div>
-            <ul className="pricing-card__features | flow text-left padding-block-6 margin-0">
+            <ul className="pricing-card__features | flow text-left padding-block-6 margin-0" style={{ "--flow-spacer": "1.5rem" } as React.CSSProperties}>
                 {features.map((feature) => {
                     return (
                         <li className="pricing-card__item">
