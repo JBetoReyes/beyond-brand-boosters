@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
 .full-height-image {
+    display: flex;
 
     &:where([data-position="right"]) {
         margin-block-end: calc($section-padding-block * -1);
@@ -17,6 +18,5 @@
 
     img {
         object-fit: cover;
-        height: 100%;
     }
 }

@@ -3,8 +3,11 @@
 .landing-page .section-hero {
     --switcher-basis: 43.75rem;
 
+    &__image-container {
+        display: flex;
+    }
+
     &__image {
-        height: 100%;
         min-height: 27.375rem;
         object-fit: cover;
 
