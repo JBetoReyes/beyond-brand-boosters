@@ -12,7 +12,7 @@
         left: calc(-100% - calc($navigation-mobile-padding * 2));
         top: calc(3.875rem + calc($site-header-padding-block * 2));
         background-color: $site-header-background-color;
-        width: 100%;
+        width: calc(100% - calc($navigation-mobile-padding * 2));
         padding: $navigation-mobile-padding;
         align-items: center;
         row-gap: $navigation-row-gap;
