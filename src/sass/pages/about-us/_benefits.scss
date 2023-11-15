@@ -8,12 +8,14 @@
         justify-content: left;
         align-items: center;
         flex-grow: 40;
+        width: 100%;
     }
 
     &__image {
         max-width: 25rem;
         max-height: 25rem;
         object-fit: cover;
+        width: 100%;
     }
 
     &__layout {
