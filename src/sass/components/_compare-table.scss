@@ -1,6 +1,14 @@
 .compare-table {
-    display: grid;
-    grid-template-columns: repeat(var(--compare-table-columns, 4), 1fr);
+
+    width: 100%;
+    overflow: auto;
+
+    &__layout {
+        min-width: 50rem;
+        display: grid;
+        grid-template-columns: repeat(var(--compare-table-columns, 4), 1fr);
+        padding-block-end: 2.8125rem
+    }
 
     &__column {
         align-self: flex-end;

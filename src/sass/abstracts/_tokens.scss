@@ -142,6 +142,10 @@ $rating-stars-color: $color-yellow-400;
 $rating-stars-background-color: rgba(0, 0, 0, .2);
 $rating-stars-font-size: 1.625rem;
 
+// scroll bar
+$scrollbar-track-color: $color-brand-primary-700;
+$scrollbar-thumb-color: $color-brand-accent-400;
+
 // forms
 // not currently being used
 // if implementing forms, also add _forms.scss
