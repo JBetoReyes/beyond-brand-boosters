@@ -107,6 +107,15 @@ const PricingPage = () => {
                     />
                 </div>
             </section>
+            <section className="section-questions | section bg-brand-accent-200 text-center">
+                <div className="container" data-type="extra-narrow">
+                    <div className="section-questions__layout | flow">
+                        <h2 className="heading-2">Still have questions?</h2>
+                        <p>If you have any questions about our services, plans, or features, we are here to help. You can contact us via email or chat, and we will get back to you as soon as possible.</p>
+                        <a href="#" className="button" data-type="primary" style={{ "--flow-spacer": "3rem" } as React.CSSProperties}>Contact us</a>
+                    </div>
+                </div>
+            </section>
             <svg width="0" height="0" >
                 <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 45" id="circle-checkmark">
                     <circle cx="22.0001" cy="22.5428" r="20.2931" fill="transparent" stroke="currentColor" stroke-width="3" />

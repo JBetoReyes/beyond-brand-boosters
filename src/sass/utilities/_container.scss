@@ -8,6 +8,10 @@
   margin-inline: auto;
 }
 
+.container[data-type="extra-narrow"] {
+  --max-width: #{$container-max-width-extra-narrow};
+}
+
 .container[data-type="narrow"] {
   --max-width: #{$container-max-width-narrow};
 }
