@@ -21,7 +21,7 @@ export type CompareTableProps<C extends string> = {
 const CompareTable = <C extends string>({ title, columns, dataRows, style }: CompareTableProps<C> & { style: React.CSSProperties }) => {
     return (
         <>
-            <h2 className="compare-table__title | heading-2 margin-block-end-11">{title}</h2>
+            <h2 className="compare-table__title | heading-2 margin-block-end-10">{title}</h2>
             <div className="compare-table | scrollbar" style={style}>
                 <div className="compare-table__layout">
                     <h2 className="compare-table__title | heading-2 margin-block-end-11">{title}</h2>
